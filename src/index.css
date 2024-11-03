@@ -1,9 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
 /* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+                
 body{
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa', sans-serif;                                         
 }
