@@ -19,7 +19,7 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
 
     return (
-        <header style={{ backgroundColor: '#fff' }} className="shadow-sm pt-10 fixed w-full z-20  top-0 left-0" >
+        <header style={{ backgroundColor: '#fff' }} className="shadow-sm pt-10  w-full z-20  top-0 left-0" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
