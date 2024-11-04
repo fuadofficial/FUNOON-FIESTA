@@ -1,26 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FaMedal } from 'react-icons/fa';
-import axios from 'axios';
 
 const TeamResults = () => {
-    const [teams, setTeams] = useState([
+    const [teams] = useState([
         { id: 1, name: 'Team A', score: 700 },
         { id: 2, name: 'Team B', score: 680 },
-        { id: 3, name: 'Team C', score: 670 },
+        { id: 3, name: 'Team C', score: 60 },
         { id: 4, name: 'Team D', score: 650 },
-        { id: 5, name: 'Team E', score: 640 },
-        { id: 6, name: 'Team F', score: 630 },
+        { id: 5, name: 'Team E', score: 6410 },
+        { id: 6, name: 'Team F', score: 1130 },
     ]);
-
-    // Function to fetch updated team data from the backend
-    const fetchTeamData = async () => {
-        try {
-            const response = await axios.get('/api/teams');
-            setTeams(response.data);
-        } catch (error) {
-            console.error('Error fetching team data:', error);
-        }
-    };
 
     // Sort teams based on scores in descending order and limit to top 6
     const sortedTeams = [...teams].sort((a, b) => b.score - a.score).slice(0, 6);
@@ -38,13 +27,6 @@ const TeamResults = () => {
                 return null;
         }
     };
-
-    // UseEffect to fetch team data on component mount and periodically
-    useEffect(() => {
-        fetchTeamData();
-        const interval = setInterval(fetchTeamData, 10000); // Auto-update every 10 seconds
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <section className="flex flex-col items-center w-full px-6 py-8 bg-gray-100 min-h-screen">
