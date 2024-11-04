@@ -49,7 +49,7 @@ const TeamResults = () => {
 
     return (
         <section className="flex flex-col items-center w-full h-screen px-4 py-6 bg-gradient-to-b from-gray-100 to-gray-300">
-            <h1 className="text-4xl font-bold mb-8 text-center text-black animate-pulse">Top Team Rankings</h1>
+            <h1 className="text-4xl font-bold mb-8 text-center text-black animate-pulse">Team rankings</h1>
             <div className="w-full max-w-3xl space-y-6 text-white">
                 {sortedTeams.map((team, index) => {
                     const { gradient } = getPositionStyles(index);
