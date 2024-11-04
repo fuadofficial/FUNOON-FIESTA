@@ -1,0 +1,10 @@
+/* Style for slick dots */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: gray; /* Inactive dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: black; /* Active dot color */
+    transform: scale(1.2); /* Enlarge the active dot */
+}

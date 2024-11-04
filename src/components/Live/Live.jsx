@@ -24,8 +24,6 @@ const Live = () => {
                 <iframe
                     className="w-full h-64 md:h-80"
                     src="https://www.facebook.com/plugins/video.php?height=346&href=https%3A%2F%2Fwww.facebook.com%2Fjamianooriyya%2Fvideos%2F1352353332308971%2F&show_text=false&width=560&t=0"
-                    width="500"
-                    height="280"
                     title="Facebook Live Stream"
                     frameBorder="0"
                     allowFullScreen
@@ -36,7 +34,3 @@ const Live = () => {
 };
 
 export default Live;
-
-
-
-
