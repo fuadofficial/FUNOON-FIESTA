@@ -6,8 +6,8 @@ const TeamResults = () => {
         { id: 1, name: 'Team A', score: 10 },
         { id: 2, name: 'Team B', score: 11 },
         { id: 3, name: 'Team C', score: 32 },
-        { id: 4, name: 'Team D', score: 3 },
-        { id: 5, name: 'Team E', score: 4 },
+        { id: 4, name: 'Team D', score: 33 },
+        { id: 5, name: 'Team E', score: 14 },
         { id: 6, name: 'Team F', score: 25 },
     ]);
 
@@ -48,7 +48,7 @@ const TeamResults = () => {
     };
 
     return (
-        <section className="flex flex-col items-center w-full h-screen px-4 py-6 bg-gradient-to-b from-gray-100 to-gray-300">
+        <section className="flex flex-col items-center w-full h-screen px-4 py-6 bg-gradient-to-b">
             <h1 className="text-4xl font-bold mb-8 text-center text-black animate-pulse">Team rankings</h1>
             <div className="w-full max-w-3xl space-y-6 text-white">
                 {sortedTeams.map((team, index) => {

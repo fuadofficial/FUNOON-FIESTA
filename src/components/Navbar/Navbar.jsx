@@ -19,7 +19,7 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
 
     return (
-        <header style={{ backgroundColor: '#fff' }} className="shadow-sm pt-10  w-full z-20  top-0 left-0" >
+        <header style={{ backgroundColor: '#fff' }} className=" pt-10  w-full z-20  top-0 left-0" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
@@ -35,8 +35,11 @@ const Navbar = () => {
                         <Link to="/about" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
                             ABOUT
                         </Link>
-                        <Link to="/services" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                        <Link to="/results" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
                             RESULT
+                        </Link>
+                        <Link to="/scoreboard" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                            SCORE BOARD
                         </Link>
                         <Link to="/contact" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
                             CONTACT
@@ -67,34 +70,40 @@ const Navbar = () => {
                                         className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
                                         onClick={toggleMenu}
                                     >
-                                        Home
+                                        HOME
                                     </Link>
                                     <Link
                                         to="/about"
                                         className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
                                         onClick={toggleMenu}
                                     >
-                                        About
+                                        ABOUT
                                     </Link>
                                     <Link
-                                        to="/services"
+                                        to="/results"
                                         className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
                                         onClick={toggleMenu}
                                     >
-                                        Services
+                                        RESULT
+                                    </Link>
+                                    <Link
+                                        to="/scoreboard"
+                                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
+                                        onClick={toggleMenu}
+                                    >
+                                        SCORE BOARD
                                     </Link>
                                     <Link
                                         to="/contact"
                                         className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
                                         onClick={toggleMenu}
                                     >
-                                        Contact
+                                        CONTACT
                                     </Link>
                                 </nav>
                             </div>
                         )}
                     </div>
-
                 )
             }
         </header >
