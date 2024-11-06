@@ -4,6 +4,7 @@ import About from "../../components/About/About";
 import TeamResults from "../../components/TeamResults/TeamResults";
 import Live from "../../components/Live/Live";
 import Poster from "../../components/Poster/Poster";
+import ScoreTable from '../../components/ScoreTable/ScoreTable';
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 			<TeamResults />
 			<Live />
 			<Poster />
+			<ScoreTable />
 		</div>
 	)
 }
