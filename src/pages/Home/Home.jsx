@@ -5,11 +5,13 @@ import TeamResults from "../../components/TeamResults/TeamResults";
 import Live from "../../components/Live/Live";
 import Poster from "../../components/Poster/Poster";
 import ScoreTable from '../../components/ScoreTable/ScoreTable';
+import Programs from '../../components/Programs/Programs';
 
 const Home = () => {
 	return (
 		<div>
 			<Theme />
+			<Programs />
 			<About />
 			<TeamResults />
 			<Live />

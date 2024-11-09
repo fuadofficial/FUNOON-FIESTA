@@ -19,29 +19,29 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
 
     return (
-        <header style={{ backgroundColor: '#fff' }} className=" pt-10  w-full z-20  top-0 left-0" >
+        <header style={{ backgroundColor: '#fff' }} className="pt-10 w-full z-20 top-0 left-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0 text-black text-3xl font-extrabold">
-                        <Link to="/">LOGO</Link>
+                        <Link to="/" className="no-underline">LOGO</Link>
                     </div>
 
                     {/* Desktop Menu */}
-                    <nav className="hidden md:flex ">
-                        <Link to="/" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                    <nav className="hidden md:flex">
+                        <Link to="/" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium no-underline">
                             HOME
                         </Link>
-                        <Link to="/about" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                        <Link to="/about" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium no-underline">
                             ABOUT
                         </Link>
-                        <Link to="/results" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                        <Link to="/results" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium no-underline">
                             RESULT
                         </Link>
-                        <Link to="/scoreboard" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                        <Link to="/scoreboard" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium no-underline">
                             SCORE BOARD
                         </Link>
-                        <Link to="/contact" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium">
+                        <Link to="/contact" className="text-gray-900 hover:text-green-900 px-3 py-2 rounded-md text-lg font-medium no-underline">
                             CONTACT
                         </Link>
                     </nav>
@@ -62,51 +62,50 @@ const Navbar = () => {
             {
                 isOpen && (
                     <div className="relative">
-                        {isOpen && (
-                            <div className="absolute -top-4 right-6  rounded-md bg-white font-medium shadow-xl w-40 text-center">
-                                <nav className="px-2 pt-2 pb-4 space-y-1">
-                                    <Link
-                                        to="/"
-                                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
-                                        onClick={toggleMenu}
-                                    >
-                                        HOME
-                                    </Link>
-                                    <Link
-                                        to="/about"
-                                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
-                                        onClick={toggleMenu}
-                                    >
-                                        ABOUT
-                                    </Link>
-                                    <Link
-                                        to="/results"
-                                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
-                                        onClick={toggleMenu}
-                                    >
-                                        RESULT
-                                    </Link>
-                                    <Link
-                                        to="/scoreboard"
-                                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
-                                        onClick={toggleMenu}
-                                    >
-                                        SCORE BOARD
-                                    </Link>
-                                    <Link
-                                        to="/contact"
-                                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900"
-                                        onClick={toggleMenu}
-                                    >
-                                        CONTACT
-                                    </Link>
-                                </nav>
-                            </div>
-                        )}
+                        <div className="absolute -top-4 right-6 rounded-md bg-white font-medium shadow-xl w-40 text-center">
+                            <nav className="px-2 pt-2 pb-4 space-y-1">
+                                <Link
+                                    to="/"
+                                    className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900 no-underline"
+                                    onClick={toggleMenu}
+                                >
+                                    HOME
+                                </Link>
+                                <Link
+                                    to="/about"
+                                    className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900 no-underline"
+                                    onClick={toggleMenu}
+                                >
+                                    ABOUT
+                                </Link>
+                                <Link
+                                    to="/results"
+                                    className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900 no-underline"
+                                    onClick={toggleMenu}
+                                >
+                                    RESULT
+                                </Link>
+                                <Link
+                                    to="/scoreboard"
+                                    className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900 no-underline"
+                                    onClick={toggleMenu}
+                                >
+                                    SCORE BOARD
+                                </Link>
+                                <Link
+                                    to="/contact"
+                                    className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-blue-900 no-underline"
+                                    onClick={toggleMenu}
+                                >
+                                    CONTACT
+                                </Link>
+                            </nav>
+                        </div>
                     </div>
                 )
             }
-        </header >
+        </header>
+
     );
 };
 
