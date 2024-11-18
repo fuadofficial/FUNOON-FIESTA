@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// search bar component
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
